@@ -21,11 +21,11 @@ print "Sell price = %.8f \t Buy price = %.8f" % (float(bter['sell']), float(bter
 
 bittrex = gets('https://bittrex.com/api/v1/public/getticker?market=BTC-DOGE')
 print "Bittrex = %.8f" % float(bittrex['result']['Last'])
-print "Sell price = %.8f \t Buy price = %.8f" % (float(bittrex['result']['Bid']), float(bittrex['result']['Ask']))
+print "Sell price = %.8f \t Buy price = %.8f" % (float(bittrex['result']['Ask']), float(bittrex['result']['Bid']))
 
 prelude = gets('https://api.prelude.io/last/DOGE', verifyval=False)
 print "Prelude = %.8f" % float(prelude['last'])
 
 mintpal = gets('https://api.mintpal.com/market/stats/DOGE/BTC')
 print "Mintpal = %.8f" % float(mintpal[0]['last_price'])
-print "Sell price = %.8f \t Buy price = %.8f" % (float(mintpal[0]['top_bid']), float(mintpal[0]['top_ask']))
+print "Sell price = %.8f \t Buy price = %.8f" % (float(mintpal[0]['top_ask']), float(mintpal[0]['top_bid']))
