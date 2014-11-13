@@ -9,4 +9,5 @@ Requests python module
 
 ```sh
 pip install requests
+pip install threading2
 ```
