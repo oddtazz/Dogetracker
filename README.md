@@ -5,7 +5,7 @@ This is a simple python script to track the value of DogeCoin on various AltCoin
 
 Requirements
 ------------
-Requests python module
+This script requires the following python modules
 
 ```sh
 pip install requests
